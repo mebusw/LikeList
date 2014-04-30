@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/256/trunk/WebRoot/biz
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/131/trunk/WebRoot/biz/search.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/208/trunk/WebRoot/biz/index.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/250/trunk/WebRoot/biz/header.jsp
+END
+consume.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/251/trunk/WebRoot/biz/consume.jsp
+END
+uploadDealAvatar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/256/trunk/WebRoot/biz/uploadDealAvatar.jsp
+END
+notify_url.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/243/trunk/WebRoot/biz/notify_url.jsp
+END
+uploadShopAvatar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/229/trunk/WebRoot/biz/uploadShopAvatar.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/131/trunk/WebRoot/biz/footer.jsp
+END
+alipay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/243/trunk/WebRoot/biz/alipay.jsp
+END
+shopmodify.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/256/trunk/WebRoot/biz/shopmodify.jsp
+END
+return_url.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/243/trunk/WebRoot/biz/return_url.jsp
+END
+alipayto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/243/trunk/WebRoot/biz/alipayto.jsp
+END

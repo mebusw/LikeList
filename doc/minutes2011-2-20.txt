@@ -1,0 +1,16 @@
+1 sendMail.jsp   concat emails with ";" or pass multi emails?
+2 adjust jquery.from
+3 remove KAIXIN icon, keep RENREN's link, add HOTMAIL&YAHOO
+4 add gif for ajax waiting
+5 inviting friends: add a from to pass all emails to sendMail.jsp
+6 recommand shops?
+7 pass "category" as number but not text
+8 shop profile: address (with map), description, webURL, phone, category
+   biz profile: alipay, phone, ID number(RO), email(RO), name(RO),
+   user profile: email(RO), name, birthday, alipay, sex, province, city 
+   shop deal: subject, content, timeFrom(YY-mm-dd), timeTo, percent(0~100)
+9 droplist of seach result when adding new shop
+10 how to claim shop? we can't copy Likelist.com
+11 renew deal expire with alipay, finish biz/alipay.jsp
+12 in css, should "feed" but not "feen"
+

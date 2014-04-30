@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/276/trunk/src/org/likelist/dao/impl
+END
+ShopDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/269/trunk/src/org/likelist/dao/impl/ShopDAOImpl.java
+END
+UserDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/276/trunk/src/org/likelist/dao/impl/UserDAOImpl.java
+END
+ShopBizDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/208/trunk/src/org/likelist/dao/impl/ShopBizDAOImpl.java
+END
+TradeDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/250/trunk/src/org/likelist/dao/impl/TradeDAOImpl.java
+END
+AlbumDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/225/trunk/src/org/likelist/dao/impl/AlbumDAOImpl.java
+END
+CommentDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/225/trunk/src/org/likelist/dao/impl/CommentDAOImpl.java
+END
+SmsDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/225/trunk/src/org/likelist/dao/impl/SmsDAOImpl.java
+END
+BizDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/275/trunk/src/org/likelist/dao/impl/BizDAOImpl.java
+END
+AddressDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/225/trunk/src/org/likelist/dao/impl/AddressDAOImpl.java
+END
+FriendDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/256/trunk/src/org/likelist/dao/impl/FriendDAOImpl.java
+END
+ShopUserDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/269/trunk/src/org/likelist/dao/impl/ShopUserDAOImpl.java
+END
+AdminDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/225/trunk/src/org/likelist/dao/impl/AdminDAOImpl.java
+END

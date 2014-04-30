@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/276/trunk/src/org/likelist/dao
+END
+ICommentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/209/trunk/src/org/likelist/dao/ICommentDAO.java
+END
+ISmsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/101/trunk/src/org/likelist/dao/ISmsDAO.java
+END
+IBizDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/275/trunk/src/org/likelist/dao/IBizDAO.java
+END
+IAddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/73/trunk/src/org/likelist/dao/IAddressDAO.java
+END
+IFriendDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/242/trunk/src/org/likelist/dao/IFriendDAO.java
+END
+IShopUserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/242/trunk/src/org/likelist/dao/IShopUserDAO.java
+END
+IAdminDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/77/trunk/src/org/likelist/dao/IAdminDAO.java
+END
+IShopDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/229/trunk/src/org/likelist/dao/IShopDAO.java
+END
+IShopBizDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/208/trunk/src/org/likelist/dao/IShopBizDAO.java
+END
+IUserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/275/trunk/src/org/likelist/dao/IUserDAO.java
+END
+ITradeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/250/trunk/src/org/likelist/dao/ITradeDAO.java
+END
+IAlbumDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/142/trunk/src/org/likelist/dao/IAlbumDAO.java
+END

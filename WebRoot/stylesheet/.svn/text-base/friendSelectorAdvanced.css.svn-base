@@ -1,0 +1,144 @@
+/**
+ * 又一个好友选择器
+ * 最先用于首页设置关注和忽略名单的弹层之中
+ * by chuanye.wang
+ */
+.friend-selector-advanced .fsa-all,
+.friend-selector-advanced .fsa-selected {
+	float: left;
+	width: 197px;
+	margin-right: 2px;
+	border: 1px solid #CEE1EE;
+	overflow: hidden;
+}
+.friend-selector-advanced img.goto {
+	float: left;
+	margin-right: 4px;
+	margin-top: 140px;
+}
+.friend-selector-advanced .header {
+	background-color: #F0F5F8;
+	padding: 3px;
+	height: 23px;
+}
+.friend-selector-advanced .header h3 {
+	line-height: 23px;
+	font-size: 12px;
+	color: #666;
+	padding-left: 10px;
+}
+.friend-selector-advanced .header .search .cancel {
+    position:absolute;
+    top:3px;
+    right:4px;
+}
+.friend-selector-advanced .header .search .input-box {
+	float: left;
+	width: 161px;
+	height: 15px;
+	padding: 3px;
+	background-color: #fff;
+	border: 1px solid #A0BEDC;
+	border-right: 0 none;
+	overflow: hidden;
+    position:relative;
+}
+.friend-selector-advanced .header .search .input-box input {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	width: 161px;
+	height: 15px;
+	outline: 0 none;
+	position: relative;
+	top: -1px;
+}
+.friend-selector-advanced .header .search a.button {
+	position: static!important;
+	display: block;
+	float: left;
+	text-indent: -9999em;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+	background: url(http://a.xnimg.cn/imgpro/button/page-search.png) 0 0 no-repeat;
+	outline: 0 none;
+}
+.friend-selector-advanced .content {
+	height: 250px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.friend-selector-advanced .scroll-box {
+	height: 100%;
+	/* overflow-x: hidden; */
+	overflow: auto;
+}
+.friend-selector-advanced .content .group-name {
+	color: #666;
+	font-weight: bold;
+	padding: 5px 0 5px 18px;
+	background: url(http://a.xnimg.cn/imgpro/arrow/arrow-lightblue.gif) 6px center no-repeat;
+	cursor: pointer;
+}
+.friend-selector-advanced .fsa-all .content .group-members {
+	display: none;
+}
+.friend-selector-advanced .content .expanded .group-name {
+	background: url(http://a.xnimg.cn/imgpro/arrow/arrow-lightblue-down.png) 6px center no-repeat;
+}
+.friend-selector-advanced .fsa-all .content .expanded .group-members {
+	display: block;
+}
+.friend-selector-advanced .group-members li {
+	padding: 3px 8px 3px 18px;
+	height: 30px;
+	overflow: hidden;
+}
+.friend-selector-advanced .group-members li .avatar {
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+}
+.friend-selector-advanced .group-members li .name {
+	float: left;
+	line-height: 30px;
+	margin-left: 8px;
+	font-weight: bold;
+	width: 78px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.friend-selector-advanced .group-members li .select {
+	float: right;
+	line-height: 30px;
+	white-space: nowrap;
+}
+.friend-selector-advanced .group-members li.hover {
+	background-color: #EDF3FF;
+}
+.friend-selector-advanced .fsa-selected .error {
+	padding: 3px 13px;
+	background-color: #FFFCC9;
+	color: #FF0000;
+	position: absolute;
+	width: 171px;
+}
+.friend-selector-advanced .group-members li .x-to-hide {
+	float: right;
+	margin-top: 9px;
+}
+
+/***add by bo.hu 
+ *  some rules for search box and result
+ * ****/
+.friend-selector-advanced .fsa-all .search-result .group-members {
+	display: block;
+}
+
+.friend-selector-advanced .fsa-all .loading{
+	padding: 0;
+	background: url(http://a.xnimg.cn/imgpro/indicator/loading.gif) 50% 50% no-repeat;
+}

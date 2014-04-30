@@ -1,0 +1,34 @@
+9
+
+dir
+265
+https://likelist.googlecode.com/svn/trunk/src/com/alipay
+https://likelist.googlecode.com/svn
+
+
+
+2011-04-17T05:40:29.704504Z
+243
+mebusw
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06c0c982-e33a-a83f-b856-080b6f19d396
+
+config
+dir
+
+util
+dir
+

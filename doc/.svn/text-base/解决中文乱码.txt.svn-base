@@ -1,0 +1,6 @@
+1. ÐÞ¸Ä/tomcat/conf/server.xmlÖÐµÄURIEncoding¡£
+    <Connector port="8080" protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" URIEncoding="UTF-8"/>
+2. <%@ page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+3. <%  request.setCharacterEncoding("UTF-8"); %>

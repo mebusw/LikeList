@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/264/trunk/WebRoot/WEB-INF
+END
+spring.tld
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/47/trunk/WebRoot/WEB-INF/spring.tld
+END
+spring-form.tld
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/47/trunk/WebRoot/WEB-INF/spring-form.tld
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/60/trunk/WebRoot/WEB-INF/struts-config.xml
+END
+tiles-def.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/WebRoot/WEB-INF/tiles-def.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/197/trunk/WebRoot/WEB-INF/web.xml
+END
+.struts-config.mex
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/60/trunk/WebRoot/WEB-INF/.struts-config.mex
+END

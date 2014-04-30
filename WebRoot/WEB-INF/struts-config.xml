@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="userLoginForm" type="org.likelist.struts.form.UserLoginForm" />
+		<form-bean name="userSignupForm" type="org.likelist.struts.form.UserSignupForm" />
+		<form-bean name="updateUserProfileForm"
+			type="org.likelist.struts.form.UpdateUserProfileForm" />
+		<form-bean name="iLikeForm" type="org.likelist.struts.form.ILikeForm" />
+		<form-bean name="searchShopForm" type="org.likelist.struts.form.SearchShopForm" />
+		<form-bean name="updateShopProfileForm"
+			type="org.likelist.struts.form.UpdateShopProfileForm" />
+		<form-bean name="addFriendForm" type="org.likelist.struts.form.AddFriendForm" />
+		<form-bean name="searchFriendForm" type="org.likelist.struts.form.SearchFriendForm" />
+		<form-bean name="replySmsForm" type="org.likelist.struts.form.ReplySmsForm" />
+		<form-bean name="sendSmsForm" type="org.likelist.struts.form.SendSmsForm" />
+		<form-bean name="addCommentForm" type="org.likelist.struts.form.AddCommentForm" />
+		<form-bean name="replyCommentForm" type="org.likelist.struts.form.ReplyCommentForm" />
+		<form-bean name="iTryForm" type="org.likelist.struts.form.ITryForm" />
+		<form-bean name="iShareForm" type="org.likelist.struts.form.IShareForm" />
+		<form-bean name="iGroupPurchaseForm"
+			type="org.likelist.struts.form.IGroupPurchaseForm" />
+		<form-bean name="iForwardForm" type="org.likelist.struts.form.IForwardForm" />
+		<form-bean name="recommandFriendForm"
+			type="org.likelist.struts.form.RecommandFriendForm" />
+		<form-bean name="findFriendLogForm" type="org.likelist.struts.form.FindFriendLogForm" />
+		<form-bean name="addPhotoForm" type="org.likelist.struts.form.AddPhotoForm" />
+		<form-bean name="removePhotoForm" type="org.likelist.struts.form.RemovePhotoForm" />
+		<form-bean name="switchDefaultPhotoForm"
+			type="org.likelist.struts.form.SwitchDefaultPhotoForm" />
+		<form-bean name="modifyPhotoDescForm"
+			type="org.likelist.struts.form.ModifyPhotoDescForm" />
+		<form-bean name="findPhotoForm" type="org.likelist.struts.form.FindPhotoForm" />
+		<form-bean name="findAlbumForm" type="org.likelist.struts.form.FindAlbumForm" />
+		<form-bean name="bizSignupForm" type="org.likelist.struts.form.BizSignupForm" />
+		<form-bean name="bizLoginForm" type="org.likelist.struts.form.BizLoginForm" />
+		<form-bean name="createShopForm" type="org.likelist.struts.form.CreateShopForm" />
+		<form-bean name="findCommentsForm" type="org.likelist.struts.form.FindCommentsForm" />
+		<form-bean name="claimShopForm" type="org.likelist.struts.form.ClaimShopForm" />
+		<form-bean name="addDealForm" type="org.likelist.struts.form.AddDealForm" />
+		<form-bean name="removeDealForm" type="org.likelist.struts.form.RemoveDealForm" />
+		<form-bean name="findStatisticsForm"
+			type="org.likelist.struts.form.FindStatisticsForm" />
+		<form-bean name="auditDealForm" type="org.likelist.struts.form.AuditDealForm" />
+    <form-bean name="userLogoutForm" type="org.likelist.struts.form.UserLogoutForm" />
+    <form-bean name="removeShopForm" type="org.likelist.struts.form.RemoveShopForm" />
+
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action attribute="userLoginForm" input="/form/login.jsp" name="userLoginForm"
+			path="/userLogin" scope="request" type="org.likelist.struts.action.UserLoginAction"
+			cancellable="true">
+			<forward name="index" path="/home/index.jsp" redirect="true" />
+		</action>
+		<action attribute="userSignupForm" input="/home/signup.jsp"
+			name="userSignupForm" path="/userSignup" scope="request"
+			type="org.likelist.struts.action.UserSignupAction" cancellable="true" />
+		<action attribute="updateUserProfileForm" input="/home/updateUserProfile.jsp"
+			name="updateUserProfileForm" path="/updateUserProfile" scope="request"
+			type="org.likelist.struts.action.UpdateUserProfileAction"
+			cancellable="true" />
+		<action attribute="iLikeForm" input="/form/index.jsp" name="iLikeForm"
+			path="/iLike" scope="request" type="org.likelist.struts.action.ILikeAction"
+			cancellable="true" />
+		<action attribute="searchShopForm" input="/form/searchShop.jsp"
+			name="searchShopForm" path="/searchShop" scope="request"
+			type="org.likelist.struts.action.SearchShopAction" cancellable="true" />
+		<action attribute="updateShopProfileForm" input="/biz/updateShopProfile.jsp"
+			name="updateShopProfileForm" path="/updateShopProfile" scope="request"
+			type="org.likelist.struts.action.UpdateShopProfileAction"
+			cancellable="true" />
+		<action attribute="addFriendForm" input="/form/addFriend.jsp"
+			name="addFriendForm" path="/addFriend" scope="request"
+			type="org.likelist.struts.action.AddFriendAction" cancellable="true" />
+		<action attribute="searchFriendForm" input="/form/searchFriend.jsp"
+			name="searchFriendForm" path="/searchFriend" scope="request"
+			type="org.likelist.struts.action.SearchFriendAction" cancellable="true" />
+		<action attribute="replySmsForm" input="/form/replySms.jsp"
+			name="replySmsForm" path="/replySms" scope="request"
+			type="org.likelist.struts.action.ReplySmsAction" cancellable="true" />
+		<action attribute="sendSmsForm" input="/form/sendSms.jsp" name="sendSmsForm"
+			path="/sendSms" scope="request" type="org.likelist.struts.action.SendSmsAction"
+			cancellable="true" />
+		<action attribute="addCommentForm" input="/form/addComment.jsp"
+			name="addCommentForm" path="/addComment" scope="request"
+			type="org.likelist.struts.action.AddCommentAction" cancellable="true" />
+		<action attribute="replyCommentForm" input="/form/replyComment.jsp"
+			name="replyCommentForm" path="/replyComment" scope="request"
+			type="org.likelist.struts.action.ReplyCommentAction" cancellable="true" />
+		<action attribute="iTryForm" input="/form/iTry.jsp" name="iTryForm"
+			path="/iTry" scope="request" type="org.likelist.struts.action.ITryAction"
+			cancellable="true" />
+		<action attribute="iShareForm" input="/form/iShare.jsp" name="iShareForm"
+			path="/iShare" scope="request" type="org.likelist.struts.action.IShareAction"
+			cancellable="true" />
+		<action attribute="iGroupPurchaseForm" input="/form/iGroupPurchase.jsp"
+			name="iGroupPurchaseForm" path="/iGroupPurchase" scope="request"
+			type="org.likelist.struts.action.IGroupPurchaseAction" cancellable="true" />
+		<action attribute="iForwardForm" input="/form/iForward.jsp"
+			name="iForwardForm" path="/iForward" scope="request"
+			type="org.likelist.struts.action.IForwardAction" cancellable="true" />
+		<action attribute="recommandFriendForm" input="/form/recommandFriend.jsp"
+			name="recommandFriendForm" path="/recommandFriend" scope="request"
+			type="org.likelist.struts.action.RecommandFriendAction" cancellable="true" />
+		<action attribute="findFriendLogForm" input="/form/findFriendLog.jsp"
+			name="findFriendLogForm" path="/findFriendLog" scope="request"
+			type="org.likelist.struts.action.FindFriendLogAction" cancellable="true" />
+		<action attribute="addPhotoForm" input="/form/addPhoto.jsp"
+			name="addPhotoForm" path="/addPhoto" scope="request"
+			type="org.likelist.struts.action.AddPhotoAction" cancellable="true" />
+		<action attribute="removePhotoForm" input="/form/removePhoto.jsp"
+			name="removePhotoForm" path="/removePhoto" scope="request"
+			type="org.likelist.struts.action.RemovePhotoAction" cancellable="true" />
+		<action attribute="switchDefaultPhotoForm" input="/form/switchDefaultPhoto.jsp"
+			name="switchDefaultPhotoForm" path="/switchDefaultPhoto" scope="request"
+			type="org.likelist.struts.action.SwitchDefaultPhotoAction"
+			cancellable="true" />
+		<action attribute="modifyPhotoDescForm" input="/form/modifyPhotoDesc.jsp"
+			name="modifyPhotoDescForm" path="/modifyPhotoDesc" scope="request"
+			type="org.likelist.struts.action.ModifyPhotoDescAction" cancellable="true" />
+		<action attribute="findPhotoForm" input="/form/findPhoto.jsp"
+			name="findPhotoForm" path="/findPhoto" scope="request"
+			type="org.likelist.struts.action.FindPhotoAction" cancellable="true" />
+		<action attribute="findAlbumForm" input="/form/findAlbum.jsp"
+			name="findAlbumForm" path="/findAlbum" scope="request"
+			type="org.likelist.struts.action.FindAlbumAction" cancellable="true" />
+		<action attribute="bizSignupForm" input="/form/bizSignup.jsp"
+			name="bizSignupForm" path="/bizSignup" scope="request"
+			type="org.likelist.struts.action.BizSignupAction" cancellable="true" />
+		<action attribute="bizLoginForm" input="/biz/login.jsp" name="bizLoginForm"
+			path="/bizLogin" scope="request" type="org.likelist.struts.action.BizLoginAction"
+			cancellable="true" />
+		<action attribute="createShopForm" input="/biz/createShop.jsp"
+			name="createShopForm" path="/createShop" scope="request"
+			type="org.likelist.struts.action.CreateShopAction" cancellable="true" />
+		<action attribute="findCommentsForm" input="/form/findComments.jsp"
+			name="findCommentsForm" path="/findComments" scope="request"
+			type="org.likelist.struts.action.FindCommentsAction" cancellable="true" />
+		<action attribute="claimShopForm" input="/form/claimShop.jsp"
+			name="claimShopForm" path="/claimShop" scope="request"
+			type="org.likelist.struts.action.ClaimShopAction" cancellable="true" />
+		<action attribute="addDealForm" input="/biz/addDeal.jsp" name="addDealForm"
+			path="/addDeal" scope="request" type="org.likelist.struts.action.AddDealAction"
+			cancellable="true" />
+		<action attribute="removeDealForm" input="/form/removeDeal.jsp" name="removeDealForm"
+			path="/removeDeal" scope="request" type="org.likelist.struts.action.RemoveDealAction"
+			cancellable="true" />
+		<action attribute="findStatisticsForm" input="/form/findStatistics.jsp"
+			name="findStatisticsForm" path="/findStatistics" scope="request"
+			type="org.likelist.struts.action.FindStatisticsAction" cancellable="true" />
+		<action attribute="auditDealForm" input="/form/auditDeal.jsp"
+			name="auditDealForm" path="/auditDeal" scope="request"
+			type="org.likelist.struts.action.AuditDealAction" cancellable="true" />
+		<action path="/index" type="org.apache.struts.actions.ForwardAction"
+			parameter="index-definition">
+		</action>
+    <action
+      attribute="userLogoutForm"
+      input="/form/userLogout.jsp"
+      name="userLogoutForm"
+      path="/userLogout"
+      scope="request"
+      type="org.likelist.struts.action.UserLogoutAction"
+      cancellable="true" />
+    <action
+      attribute="removeShopForm"
+      input="/form/removeShop.jsp"
+      name="removeShopForm"
+      path="/removeShop"
+      scope="request"
+      type="org.likelist.struts.action.RemoveShopAction"
+      cancellable="true" />
+
+	</action-mappings>
+	<message-resources parameter="org.likelist.struts.ApplicationResources" />
+
+	<plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+		<set-property property="contextConfigLocation"
+			value="/WEB-INF/classes/applicationContext.xml" />
+	</plug-in>
+
+
+</struts-config>
+

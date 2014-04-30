@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/256/trunk/src/org/likelist/type
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/42/trunk/src/org/likelist/type/Role.java
+END
+AlbumType.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/59/trunk/src/org/likelist/type/AlbumType.java
+END
+OperationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/256/trunk/src/org/likelist/type/OperationType.java
+END
+BizCategory1.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/42/trunk/src/org/likelist/type/BizCategory1.java
+END
+BizCategory2.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/42/trunk/src/org/likelist/type/BizCategory2.java
+END
+CommentType.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/50/trunk/src/org/likelist/type/CommentType.java
+END
+DealState.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/42/trunk/src/org/likelist/type/DealState.java
+END
+DealType.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/42/trunk/src/org/likelist/type/DealType.java
+END
+FriendState.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/104/trunk/src/org/likelist/type/FriendState.java
+END
+ShopState.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/42/trunk/src/org/likelist/type/ShopState.java
+END
+OrderType.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/243/trunk/src/org/likelist/type/OrderType.java
+END
+UserState.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/42/trunk/src/org/likelist/type/UserState.java
+END
+FeedbackType.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/42/trunk/src/org/likelist/type/FeedbackType.java
+END
+FeedFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/210/trunk/src/org/likelist/type/FeedFormatter.java
+END
+EC.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/142/trunk/src/org/likelist/type/EC.java
+END
+MailProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/169/trunk/src/org/likelist/type/MailProvider.java
+END

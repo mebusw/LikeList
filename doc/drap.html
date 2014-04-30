@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>拖动</title>
+<script src="js/util.js"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+<style type="text/css">
+body {
+	padding:0;
+	margin:0;
+	position:relative;
+}
+.drop,.drag {
+	width:100px;
+	height:100px;	
+}
+.drop {
+	background:#066;
+	position:absolute;
+	z-index:98;
+	display:none;
+}
+.drag {
+	background:#C33;
+	position:absolute;
+	z-index:99;
+	left:600px;
+	top:200px;
+}
+.wrap {
+	width:980px;
+	margin:0 auto;
+	overflow:hidden;
+	border:#CCC solid 1px;
+}
+#sidebar {
+	width:180px;
+	border:#f2f2f2 solid 1px;
+	background:#CCC;
+	height:2000px;
+	float:left;
+}
+.main {
+	float:right;
+	width:680px;
+	background:#FFF;
+}
+.drop-highlight{ background:#FFB997;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div id="sidebar"></div>
+  <div class="main"><a href="#">回应</a></div>
+  <p style="clear:both"></p>
+</div>
+<div class="drop"></div>
+<div class="drag"></div>
+<script type="text/javascript">
+$(function(){
+	(function(){
+		var drop=$(".drop"),drag=$(".drag");
+		dropPosition(drop);
+		if(helpStatus()==="yes"){
+			esjDrop(drag,drop);
+		}
+		$(".main a").live("click",function(){
+			var s=helpStatus(); //获取状态
+			if(s===null || s==="no"){
+				esjDrop(drag,drop);
+			}
+		})
+	})()
+})
+var esjDrop=function(drag,drop){
+	drop.show();
+	helpStatus("yes");
+	drag.css({cursor:"move"}).draggable({ 
+				containment:"document", 
+				revert: "invalid",
+				helper: "clone", 
+				cursor: "move", 
+				zIndex: "99" 
+	});
+	drop.droppable({
+		accept:".drag",
+		activeClass:"drop-highlight",
+		drop:function(event, ui){
+		  helpStatus("no");
+		  drop.hide();
+		  drag.css({cursor:"default"});
+		  $.ajax({
+			  url:"../action/iResponse.jsp",
+			  data:{shopId:"",friendId:""},
+			  dataType:"json",
+			  success:function(json){
+				  if(json.ec==="0"){
+					  alert("您成功帮助了好友***！")
+				  }
+			  }
+		  })
+		} 
+	})
+}
+var dropPosition=function(drop){
+	var dropPosition={
+		left:(parseInt($(window).width())-980)/2+180,
+		top:parseInt($(window).height()-100)/2
+	};
+	drop.css({left:dropPosition.left,top:dropPosition.top})
+	$(document).scroll(function(){
+		var dTop = dropPosition.top + parseInt($(this).scrollTop());
+		drop.css({top:dTop});
+	})
+}
+function helpStatus(status){
+	if(status){
+		setCookie("helpstatus",status);
+	}else{
+		var status=getCookie("helpstatus");
+	}
+	return status;
+}
+</script>
+</body>
+</html>

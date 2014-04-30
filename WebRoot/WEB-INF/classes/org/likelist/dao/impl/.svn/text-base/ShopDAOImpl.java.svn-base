@@ -1,0 +1,431 @@
+package org.likelist.dao.impl;
+
+import java.util.*;
+
+import org.hibernate.Hibernate;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.likelist.dao.*;
+import org.likelist.dbc.HibernateSessionFactory;
+import org.likelist.po.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class ShopDAOImpl extends HibernateDaoSupport implements IShopDAO {
+
+	public static void main(String args[]) {
+
+		for (String s : splitKeyword("  黄龙 健身 羽毛球 场地 "))
+			System.out.println(s);
+
+		ApplicationContext ac = new ClassPathXmlApplicationContext(
+				"applicationContext.xml");
+		IShopDAO dao = (ShopDAOImpl) ac.getBean("shopDAO");
+
+		System.out.println(dao.searchShopByPage(1, "", "", "", "浙江省", "",
+				"", 0, 20, 0).size());
+		// System.out.println(dao.searchDealByPage(1, " 海鲜", 0, 20, 1).size());
+		// System.out.println(dao.searchDealCount(1, " 海鲜"));
+		// System.out.println(dao.searchShopByPage(1, "k 当", "", "", "", "杭州市",
+		// "", 0, 5, 0));
+
+	}
+
+	public List<String> findCategory(int level) {
+		List<?> list = null;
+		Query query = null;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+			query = session
+					.createQuery("select mainCategory from EsjShopCategory ");
+
+			list = query.list();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return (List<String>) list;
+	}
+
+	public EsjShop findShop(int shopId) {
+		EsjShop esjShop = null;
+		Session session = HibernateSessionFactory.getSession();
+
+		try {
+			esjShop = (EsjShop) session.load(EsjShop.class, shopId);
+			Hibernate.initialize(esjShop);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return esjShop;
+	}
+
+	public static String[] splitKeyword(String keyword) {
+		String[] ks = keyword.trim().split(" ", 4);
+		String[] ret = new String[3];
+
+		ret[0] = ks[0];
+		switch (ks.length) {
+		case 1:
+			ret[1] = ks[0];
+			ret[2] = ks[0];
+			break;
+		case 2:
+			ret[1] = ks[1];
+			ret[2] = ks[0];
+			break;
+		default:
+			ret = ks;
+			break;
+		}
+		return ret;
+	}
+
+
+	public long getLikeCount(int shopId) {
+		Query query = null;
+		Session session = HibernateSessionFactory.getSession();
+		long longCount = 0;
+		try {
+			query = session
+					.createQuery("select count(u2blikeitId) from EsjUserLikeit where shopId=?");
+			query.setInteger(0, shopId);
+			longCount = (Long) query.list().get(0);
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return longCount;
+
+	}
+
+	public long getTryCount(int shopId) {
+		Query query = null;
+		Session session = HibernateSessionFactory.getSession();
+		long longCount = 0;
+		try {
+			query = session
+					.createQuery("select count(u2btryitId) from EsjUserTryit where shopId=?");
+			query.setInteger(0, shopId);
+			longCount = (Long) query.list().get(0);
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return longCount;
+	}
+
+	public List<EsjUserInfo> shopOperationFromFriends(int uid, EsjShop esjShop,
+			int friendLimit) {
+		Session session = HibernateSessionFactory.getSession();
+		Query query = null;
+		long longCount;
+		List<?> list = null;
+
+		try {
+			query = session
+					.createQuery("select count(u2blikeitId) from EsjUserLikeit where shopId=?");
+			query.setInteger(0, esjShop.getShopId());
+			longCount = (Long) query.list().get(0);
+			esjShop.setShopLiked((int) longCount);
+			// System.out.println("l"+esjShop.getShopLiked());
+
+			query = session
+					.createQuery("select count(u2btryitId) from EsjUserTryit where shopId=?");
+			query.setInteger(0, esjShop.getShopId());
+			longCount = (Long) query.list().get(0);
+			esjShop.setShopTried((int) longCount);
+			// System.out.println("t"+esjShop.getShopTried());
+
+			// query = session
+			// .createQuery("select count(visitEventId) from EsjShopVisitor where shopId=?");
+			// query.setInteger(0, esjShop.getShopId());
+			// longCount = (Long) query.list().get(0);
+			// esjShop.setShopVisited((int) longCount);
+			// System.out.println("v" + esjShop.getShopVisited());
+			esjShop.setShopVisited(0);
+
+			query = session
+					.createQuery("select u from EsjUserLikeit l, EsjUserInfo u, EsjUserFriend f "
+							+ "where shopId=? AND f.userId=? AND u.userId=f.friendId "
+							+ "AND l.userId=u.userId ");
+			query.setInteger(0, esjShop.getShopId());
+			query.setInteger(1, uid);
+			list = query.setMaxResults(friendLimit).list();
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return (List<EsjUserInfo>) list;
+	}
+
+	public EsjHotSearch addHotSearch(int uid, String keyword) {
+		Transaction tran = null;
+		Query query = null;
+		EsjHotSearch esjHotSearch = null;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+
+			query = session.createQuery("from EsjHotSearch where keyword=?");
+			query.setString(0, keyword);
+			try {
+				esjHotSearch = (EsjHotSearch) query.list().get(0);
+				esjHotSearch.setSearchTimes(esjHotSearch.getSearchTimes() + 1);
+
+			} catch (IndexOutOfBoundsException e) {
+				esjHotSearch = new EsjHotSearch(keyword, 1, uid);
+			} finally {
+				try {
+					tran = session.beginTransaction();
+					session.saveOrUpdate(esjHotSearch);
+					tran.commit();
+				} catch (HibernateException e) {
+					e.printStackTrace();
+				}
+			}
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return esjHotSearch;
+	}
+
+
+	public List<?> searchShopByPage(int uid, String keyword, String category1,
+			String category2, String province, String city, String district,
+			int offset, int pageSize, int sortBy) {
+
+		List<?> list = null;
+		Query query = null;
+		Session session = HibernateSessionFactory.getSession();
+		String sortField;
+
+		try {
+			switch (sortBy) {
+			case 1:
+				sortField = "s.lastUpdate";
+				break;
+			default:
+				sortField = "s.shopLiked";
+			}
+
+			String ks[] = splitKeyword(keyword);
+
+			query = session
+					.createQuery("FROM EsjShop s, EsjShopDiscount d, EsjShopGrouprate g "
+							+ " WHERE ( s.shopName like ? OR s.shopName like ? OR s.shopName like ? ) "
+							+ " AND s.category1 like ? AND s.province like ? "
+							+ " AND s.city like ? AND s.district like ? "
+							+ " AND s.shopId=d.shopId AND s.shopId=g.shopId "
+							+ " AND s.approved=1 ORDER BY "
+							+ sortField
+							+ " DESC ");
+			query.setString(0, "%" + ks[0] + "%");
+			query.setString(1, "%" + ks[1] + "%");
+			query.setString(2, "%" + ks[2] + "%");
+			query.setString(3, "%" + category1 + "%");
+			query.setString(4, "%" + province + "%");
+			query.setString(5, "%" + city + "%");
+			query.setString(6, "%" + district + "%");
+
+			list = query.setFirstResult(offset).setMaxResults(pageSize).list();
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return list;
+
+	}
+
+	public EsjShopDiscount findDeal(int dealId) {
+		EsjShopDiscount esjShopDiscount = null;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+			esjShopDiscount = (EsjShopDiscount) session.load(
+					EsjShopDiscount.class, dealId);
+			Hibernate.initialize(esjShopDiscount);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return esjShopDiscount;
+	}
+
+	public EsjShopGrouprate findGrouprate(int grId) {
+		EsjShopGrouprate esjShopGrouprate = null;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+			esjShopGrouprate = (EsjShopGrouprate) session.load(
+					EsjShopGrouprate.class, grId);
+			Hibernate.initialize(esjShopGrouprate);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return esjShopGrouprate;
+	}
+
+	public List<EsjShopDiscount> findDeals(int shopId) {
+		Session session = HibernateSessionFactory.getSession();
+		Query query = null;
+		List<EsjShopDiscount> deals = null;
+
+		try {
+			query = session.createQuery("FROM EsjShopDiscount WHERE shopId=?");
+			query.setInteger(0, shopId);
+			deals = query.list();
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return deals;
+	}
+
+	public List<EsjShopGrouprate> findGrouprates(int shopId) {
+		Session session = HibernateSessionFactory.getSession();
+		Query query = null;
+		List<EsjShopGrouprate> grouprates = null;
+
+		try {
+			query = session.createQuery("FROM EsjShopGrouprate WHERE shopId=?");
+			query.setInteger(0, shopId);
+			grouprates = query.list();
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return grouprates;
+	}
+
+	public List<?> searchDealByPage(int uid, String keyword, String category1,
+			String category2, String province, String city, String district,
+			int offset, int pageSize, int sortBy) {
+		List<?> list = null;
+		Query query = null;
+		Session session = HibernateSessionFactory.getSession();
+		String sortField;
+		try {
+			switch (sortBy) {
+			default:
+				sortField = "s.shopLiked";
+			}
+
+			String ks[] = splitKeyword(keyword);
+
+			query = session
+					.createQuery("from EsjShop s, EsjShopDiscount d, EsjShopGrouprate g "
+							+ " where ( d.subject like ? OR d.subject like ? OR d.subject like ? ) "
+							+ " AND s.category1 like ? AND s.province like ? "
+							+ " AND s.city like ? AND s.district like ? "
+							+ " AND d.approved=1 AND s.approved=1 "
+							+ " AND s.shopId=d.shopId AND s.shopId=g.shopId ORDER BY "
+							+ sortField + " DESC ");
+			query.setString(0, "%" + ks[0] + "%");
+			query.setString(1, "%" + ks[1] + "%");
+			query.setString(2, "%" + ks[2] + "%");
+			query.setString(3, "%" + category1 + "%");
+			query.setString(4, "%" + province + "%");
+			query.setString(5, "%" + city + "%");
+			query.setString(6, "%" + district + "%");
+
+			list = query.setFirstResult(offset).setMaxResults(pageSize).list();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return list;
+	}
+
+	public long searchDealCount(int uid, String keyword, String category1,
+			String category2, String province, String city, String district) {
+		Query query = null;
+		long count = 0;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+			String ks[] = splitKeyword(keyword);
+
+			query = session
+					.createQuery("SELECT count(d.shopDiscountId) FROM EsjShopDiscount d, EsjShop s "
+							+ " WHERE ( d.subject like ? OR d.subject like ? OR d.subject like ? ) "
+							+ " AND s.category1 like ? AND s.province like ? "
+							+ " AND s.city like ? AND s.district like ? "
+							+ " AND s.shopId=d.shopId "
+							+ " AND d.approved=1 AND s.approved=1");
+			query.setString(0, "%" + ks[0] + "%");
+			query.setString(1, "%" + ks[1] + "%");
+			query.setString(2, "%" + ks[2] + "%");
+			query.setString(3, "%" + category1 + "%");
+			query.setString(4, "%" + province + "%");
+			query.setString(5, "%" + city + "%");
+			query.setString(6, "%" + district + "%");
+
+			count = (Long) query.list().get(0);
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return count;
+	}
+
+	public long searchShopCount(int uid, String keyword, String category1,
+			String category2, String province, String city, String district) {
+		Transaction tran = null;
+		Query query = null;
+		EsjHotSearch esjHotSearch = null;
+		long count = 0;
+		Session session = HibernateSessionFactory.getSession();
+		try {
+			String ks[] = splitKeyword(keyword);
+			query = session
+					.createQuery("select count(s.shopId) from EsjShop s "
+							+ " where ( s.shopName like ? OR s.shopName like ? OR s.shopName like ? ) "
+							+ " AND s.category1 like ? AND s.province like ? "
+							+ " AND s.city like ? AND s.district like ? "
+							+ " AND s.approved=1 ");
+			query.setString(0, "%" + ks[0] + "%");
+			query.setString(1, "%" + ks[1] + "%");
+			query.setString(2, "%" + ks[2] + "%");
+			query.setString(3, "%" + category1 + "%");
+			query.setString(4, "%" + province + "%");
+			query.setString(5, "%" + city + "%");
+			query.setString(6, "%" + district + "%");
+
+			count = (Long) query.list().get(0);
+
+			query = session.createQuery("from EsjHotSearch where keyword=?");
+			query.setString(0, keyword);
+			try {
+				esjHotSearch = (EsjHotSearch) query.list().get(0);
+				esjHotSearch.setSearchTimes(esjHotSearch.getSearchTimes() + 1);
+
+			} catch (IndexOutOfBoundsException e) {
+				esjHotSearch = new EsjHotSearch(keyword, 1, uid);
+			} finally {
+				try {
+					tran = session.beginTransaction();
+					session.saveOrUpdate(esjHotSearch);
+					tran.commit();
+				} catch (HibernateException e) {
+					e.printStackTrace();
+				}
+			}
+
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		}
+		HibernateSessionFactory.closeSession();
+		return count;
+	}
+
+}

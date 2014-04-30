@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/168/trunk/WebRoot/form
+END
+removeShop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/60/trunk/WebRoot/form/removeShop.jsp
+END
+removePhoto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/41/trunk/WebRoot/form/removePhoto.jsp
+END
+findPhoto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/41/trunk/WebRoot/form/findPhoto.jsp
+END
+bizSignup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/168/trunk/WebRoot/form/bizSignup.jsp
+END
+findStatistics.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/41/trunk/WebRoot/form/findStatistics.jsp
+END
+auditDeal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/41/trunk/WebRoot/form/auditDeal.jsp
+END
+recommandFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/40/trunk/WebRoot/form/recommandFriend.jsp
+END
+replySms.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/40/trunk/WebRoot/form/replySms.jsp
+END
+replyComment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/40/trunk/WebRoot/form/replyComment.jsp
+END
+claimShop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/41/trunk/WebRoot/form/claimShop.jsp
+END
+jquery.validate.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/114/trunk/WebRoot/form/jquery.validate.html
+END
+modifyPhotoDesc.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/41/trunk/WebRoot/form/modifyPhotoDesc.jsp
+END
+switchDefaultPhoto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/41/trunk/WebRoot/form/switchDefaultPhoto.jsp
+END
+removeDeal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/60/trunk/WebRoot/form/removeDeal.jsp
+END

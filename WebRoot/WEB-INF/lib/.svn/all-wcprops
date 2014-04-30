@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/264/trunk/WebRoot/WEB-INF/lib
+END
+swt-3.6M3-win32-win32-x86.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/264/trunk/WebRoot/WEB-INF/lib/swt-3.6M3-win32-win32-x86.jar
+END
+contactlist-1.13.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/contactlist-1.13.0.jar
+END
+json-20090211.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/json-20090211.jar
+END
+google-collections-1.0-rc2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/google-collections-1.0-rc2.jar
+END
+xml-apis-1.3.03.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/xml-apis-1.3.03.jar
+END
+gdata-client-meta-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-client-meta-1.0.jar
+END
+DJNativeSwing.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/264/trunk/WebRoot/WEB-INF/lib/DJNativeSwing.jar
+END
+gdata-contacts-meta-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-contacts-meta-3.0.jar
+END
+json_simple-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/37/trunk/WebRoot/WEB-INF/lib/json_simple-1.1.jar
+END
+xercesImpl-2.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/xercesImpl-2.8.1.jar
+END
+commons-io-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/56/trunk/WebRoot/WEB-INF/lib/commons-io-1.4.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/101/trunk/WebRoot/WEB-INF/lib/mail.jar
+END
+commons-codec-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/commons-codec-1.2.jar
+END
+gdata-base-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-base-1.0.jar
+END
+mysql-connector-java-5.0.5-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2/trunk/WebRoot/WEB-INF/lib/mysql-connector-java-5.0.5-bin.jar
+END
+commons-httpclient-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/commons-httpclient-3.1.jar
+END
+DJNativeSwing-SWT.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/264/trunk/WebRoot/WEB-INF/lib/DJNativeSwing-SWT.jar
+END
+gdata-client-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-client-1.0.jar
+END
+gdata-contacts-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-contacts-3.0.jar
+END
+nekohtml-1.9.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/nekohtml-1.9.6.2.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/56/trunk/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+kxml2-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/kxml2-2.3.0.jar
+END
+commons-email-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/101/trunk/WebRoot/WEB-INF/lib/commons-email-1.1.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar
+END
+log4j-1.2.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/log4j-1.2.12.jar
+END
+xmlpull-1.1.3.4a.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/xmlpull-1.1.3.4a.jar
+END
+msnmlib-1.4-20050613.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/msnmlib-1.4-20050613.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/101/trunk/WebRoot/WEB-INF/lib/activation.jar
+END
+gdata-core-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/155/trunk/WebRoot/WEB-INF/lib/gdata-core-1.0.jar
+END

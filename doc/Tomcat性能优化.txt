@@ -1,0 +1,34 @@
+1. 使用thread pool 和 nio来提高性能
+在tomcat/conf的server.xml中找到<Connector>节点
+    <Connector executor="tomcatThreadPool"
+               port="8080" protocol="org.apache.coyote.http11.Http11NioProtocol"
+               connectionTimeout="20000" 
+               redirectPort="8443" URIEncoding="UTF-8"/>
+
+要使用nio的话，修改默认的protocol="HTTP/1.1" 为 protocol="org.apache.coyote.http11.Http11NioProtocol" 
+
+要使用thread pool的话，添加executor="tomcatThreadPool"
+
+
+2. 将tomcat置于非开发模式来提高性能
+在tomcat/conf的web.xml中找到<servlet><servlet-name>jsp</servlet-name>节点
+		<init-param>
+			<param-name>development</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	    <init-param>
+			<param-name>genStringAsCharArray</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>modificationTestInterval</param-name>
+			<param-value>1800</param-value>
+		</init-param>
+		<init-param>
+			<param-name>trimSpaces</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>checkInterval</param-name>
+			<param-value>1800</param-value>
+		</init-param>

@@ -1,0 +1,153 @@
+div.shop-list {
+	display: block;
+	width: auto !important;
+	min-width: 800px;
+	width: 800px;
+}
+
+div.shop-info {
+	float: left;
+	display: block;
+	width: 400px;
+}
+
+div.shop-action {
+	display: block;
+	font-size: 18px;
+}
+
+div.popup-dialog {
+	display: none;
+	position: absolute;
+	background: #E4F0FC;
+	float: right;
+}
+
+span.likeit {
+	
+}
+
+span.liked {
+	background-color: white;
+	color: #4C60B4
+}
+
+span.tryit {
+	background-color: orange;
+	padding: 4px 5px;
+	border: 1px solid #3D5AA8;
+	cursor: pointer;
+}
+
+span.tried {
+	background-color: white;
+}
+
+span.like-droplist {
+	background-color: orange;
+	width: 20px;
+	cursor: pointer;
+}
+
+.c {
+	clear: both;
+}
+
+a.close:hover {
+	background: transparent url(../images/beta2/xBtn.png) no-repeat -16px
+		0px;
+}
+
+a.close {
+	background: transparent url(../images/beta2/xBtn.png) no-repeat 0 0;
+	display: block;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+	color: #3D5AA8;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.publisher .status-publisher .keyword {
+	-webkit-box-shadow: #E8E8E8 1px 1px inset;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #BDC7D8;
+	font-size: 14px;
+	height: 28px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	outline: 0px;
+	overflow-x: hidden;
+	resize: none;
+	width: 100%;
+}
+
+#tile-central {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	min-height: 600px;
+	width: 780px;
+}
+
+span.duration {
+	margin-right: 2.9px;
+}
+
+#hd .city-list {
+	background: #CFDEEF;
+	clear: both;
+	display: none;
+	float: left;
+	left: -154px;
+	padding: 10px;
+	position: absolute;
+	top: 38px;
+	width: 258px;
+	z-index: 2;
+}
+
+.site-menu-user-box {
+	border-bottom: 1px solid #E3EEF8;
+	position: relative;
+	z-index: 2;
+}
+
+.site-menu-user-box .site-menu-user {
+	padding: 20px 10px 10px 0px;
+}
+
+.pymk .recognize li span.headpichold {
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: normal;
+	margin: 0px 5px 0px 0px;
+	overflow: hidden;
+	text-align: left;
+	width: 50px;
+}
+
+.pymk .recognize li span a.name {
+	display: block;
+	font-weight: bold;
+	margin-top: 6px;
+	width: 100px;
+}
+
+.pymk .recognize li p {
+	line-height: normal;
+	margin: 3px 0px 3px 55px;
+}
+
+.listing-aux .members-list {
+	background: white;
+	border: 2px solid #C4D8EB;
+	height: 36px;
+	margin: 2px 0px 5px;
+	padding: 5px 5px 4px 4px;
+	position: relative;
+}

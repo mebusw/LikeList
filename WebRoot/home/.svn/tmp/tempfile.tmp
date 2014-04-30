@@ -1,0 +1,243 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@  page import="java.text.SimpleDateFormat"%>
+<%@  page import="org.likelist.dao.*"%>
+<%@  page import="org.likelist.dao.impl.*"%>
+<%@  page import="org.likelist.struts.action.AttrParser"%>
+<%@  page import="org.likelist.po.*"%>
+<%@  page import="java.util.*"%>
+<%@  page import="java.text.SimpleDateFormat"%>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
+<%@ taglib uri="http://struts.apache.org/tags-tiles" prefix="tiles"%>
+
+<input type="hidden" id="targetShopId"/>
+<div id="custom-lists-element" class="hidden">
+  <div class="popup-separator">Add to Custom List</div>
+  <label class="template hidden">
+    <input type="checkbox" value="MEMBER" name="LIST_ID" />
+    <span>LIST_NAME</span></label>
+  <div id="custom-lists-element-custom-list-container"></div>
+  <div id="custom-lists-element-create-list">
+    <input type="checkbox" value="" name="" id="custom-lists-element-create-list-cb" />
+    <input type="text" id="custom-lists-element-text-new-list" maxlength="32" value="New custom list" placeholder="New custom list" />
+  </div>
+</div>
+<div id="like-context-popup" class="popup-container hidden">
+  <div class="popup-container-wrapper">
+    <div class="popup-container-header hidden">
+      <div class="popup-container-header-carrot">&nbsp;</div>
+    </div>
+    <div class="popup-container-content">
+      <div class="error-message" style="display:none;"></div>
+      <div class="elements-area">
+        <div id="like-context-element">
+          <input class="shop-id" type="hidden" />
+          <input class="shop-liked" type="hidden" />
+          <input class="shop-tried" type="hidden" />
+          <input class="shop-feed-anchor" type="hidden" />
+          <div id="like-context-element-custom"></div>
+          <p class="feed-like-program">分享到：
+          <ul class="share-list">
+            <li><a href="#" class="rr" target="_blank">人人</a></li>
+            <li><a href="#" class="kx" target="_blank">开心</a></li>
+            <li><a href="#" class="qqwb" target="_blank">QQ微博</a></li>
+            <li><a href="#" class="snwb" target="_blank">sina微博</a></li>
+            <li><a href="#" class="qqpy" target="_blank">QQ朋友</a></li>
+            <li><a href="#" class="qqkj" target="_blank">QQ空间</a></li>
+            <!--<li><a href="#" class="ty" target="_blank">天涯</a></li>
+            <li><a href="#" class="db" target="_blank">豆瓣</a></li>
+            <li><a href="#" class="tb" target="_blank">淘宝</a></li>-->
+          </ul>
+          </p>
+          <p class="feed-like-program"><a id="like-context-element-try">尝试</a></p>
+          <p class="feed-like-program"><a id="like-context-element-alikelist">制作卡片</a></p>
+          <p class="feed-like-program"><a id="like-context-element-remove">不喜欢了</a></p>
+          <a class="close"></a>
+          <textarea id="like-context-element-comment"></textarea>
+          <br />
+          <p><a class="bt-submit bt-round" id="like-context-element-comment-submit"><span>点评</span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--help-box start-->
+<div class="help-box hidden" id="help">
+  <div class="help-title">林小儿</div>
+  <div class="help-con">谁知道哪里可以吃到便宜的海鲜吗？</div>
+  <div class="help-canel tr"><a href="#">关闭</a></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	(function(){
+		var drop=$("#help");
+<<<<<<< .mine
+		var drag=$(document).live("load",function(){
+			return $(".feed-img");
+		});
+=======
+>>>>>>> .r235
+		dropPosition(drop);
+		if(helpStatus()==="yes"){
+			esjDrop(drag,drop);
+		}
+		$(".feed-help a").live("click",function(e){
+			e.preventDefault();
+			var helpTitle=$(this).siblings(".hfn").text(),
+			    helpCon=$(this).siblings(".htc").text();
+			var s=helpStatus(); //获取状态
+			var drag=$(".feed-img");
+			if(s===null || s==="no"){
+				esjDrop(drag,drop);
+			}
+			drop.children(".help-title").text($(this).parent().text());
+			drop.children(".help-con").text("");
+		});
+		$(".help-canel a").click(function(e){
+			e.preventDefault();
+			drop.hide();
+			helpStatus("no");
+	    });
+	})();
+});
+var esjDrop=function(drag,drop){
+	drop.show();
+	helpStatus("yes");
+	drag.css({cursor:"move"}).draggable({ 
+				containment:"document", 
+				revert: "invalid",
+				helper: "clone", 
+				cursor: "move", 
+				zIndex: "2000" 
+	});
+	drop.droppable({
+		accept:".feed-img",
+		activeClass:"help-box-highlight",
+		drop:function(event, ui){
+		  helpStatus("no");
+		  drop.hide();
+		  drag.css({cursor:"default"});
+		  $.ajax({
+			  url:"../action/iResponse.jsp",
+			  data:{shopId:"",friendId:""},
+			  dataType:"json",
+			  success:function(json){
+				  if(json.ec==="0"){
+					  alert("您成功帮助了好友***！")
+				  }
+			  }
+		  })
+		} 
+	})
+}
+var dropPosition=function(drop){
+	var dropOffect={
+		left:(parseInt($(window).width())-980)/2+170,
+		top:parseInt($(window).height()-160)/2
+	};
+	drop.css({left:dropOffect.left,top:dropOffect.top})
+	$(document).scroll(function(){
+		var dTop = dropOffect.top + parseInt($(this).scrollTop());
+		drop.css({top:dTop});
+	})
+}
+function helpStatus(status){
+	if(status){
+		setCookie("helpstatus",status);
+	}else{
+		var status=getCookie("helpstatus");
+	}
+	return status;
+}
+$(function(){
+	var $helpTarget=$("#help");
+	var s=helpStatus();
+	if(s==null || s=="no"){
+	  $(".feed-help a").live("click",function(){
+		  $helpTarget.slideDown();
+		  var feedDrap=$(".feed-img");
+		  feedDrap.css({cursor:"move"});
+		  feedDrap.draggable({ 
+			revert: "invalid", 
+			containment:"document", 
+			helper: "clone", 
+			cursor: "move", 
+			zIndex: "2000" 
+		  });
+      
+		  $("#help").droppable({ 
+			accept:".feed-img",
+			activeClass:"help-box-highlight", 
+			drop:function(event, ui){
+			  $("#help").hide(); 
+			  s=helpStatus("no"); 
+			} 
+		}); 
+		  helpStatus("yes");
+	  })
+	}else{
+		$helpTarget.slideDown();
+	}
+	$(".help-canel a").click(function(){
+		$helpTarget.hide();
+		helpStatus("no");
+	})
+})
+function helpStatus(status){
+	if(status){
+		setCookie("helpstatus",status);
+	}else{
+		var status=getCookie("helpstatus");
+	}
+	return status;
+}
+</script>
+<!--help-box end-->
+//<script type="text/javascript">
+//	function postTo(web){
+//		var getFeed=function(){
+//		    var shopId=$("#like-context-element .shop-id").attr("value");
+//			var feed;
+//			if(shopId == $(".shop-id",$("#tabs"))){
+//				feed == $(".shop-id",$("#tabs")).parent(".a-feed");
+//			}
+//			return feed;
+//	    }
+//		var title = $(".shop-name",feed).attr("value");
+//		var _url = encodeURIComponent(document.location);
+//		var _pic = encodeURI('');//（例如：var _pic='图片url1|图片url2|图片url3....）
+//		var _site = '';//你的网站地址
+//		var _u;
+//        var _appkey = 0;    
+//		switch(web){
+//			case("qqweb"):
+//			_u = 'http://v.t.qq.com/share/share.php?title='+title+'&site='+_site+'&pic='+_pic+'&url='+_u;
+//			break;
+//			case("rr"):
+//			_u='http://www.connect.renren.com/share/sharer?url='+_url+'&pic='+_pic+'&title='+_t;
+//			break;
+//			case("snwb"):
+//			_u='http://service.t.sina.com.cn/share/share.php?url='+_url+'&appkey='+_appkey+'&title='+_t+'&pic='+_pic;
+//			break;
+//			case("qqkj"):
+//			_u='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+_url;
+//			break;
+//			case("qqpy"):
+//			_u='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url='+_url;
+//			break;
+//			case("kx"):
+//			_u='http://www.kaixin001.com/repaste/bshare.php?rtitle='+_t+'&rurl='+_url;
+//			break;
+//		}
+//		return _u;
+//	}
+//$(function(){
+//	$(".qqwb").attr("href",postTo("qqweb"));
+//	$(".rr").attr("href",postTo("rr"));
+//	$(".snwb").attr("href",postTo("snwb"));
+//	$(".qqkj").attr("href",postTo("qqkj"));
+//	$(".qqpy").attr("href",postTo("qqpy"));
+//	$(".kx").attr("href",postTo("kx"));
+//})
+//</script>

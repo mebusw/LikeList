@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/userLogin.do" location="50,50" dimension="289,112" />
+  <StrutsActivity path="/userSignup.do" location="405,375" dimension="298,112" />
+  <StrutsActivity path="/updateUserProfile.do" location="950,250" dimension="339,112" />
+  <StrutsActivity path="/iLike.do" location="350,550" dimension="255,112" />
+  <StrutsActivity path="/searchShop.do" location="950,650" dimension="301,112" />
+  <StrutsActivity path="/updateShopProfile.do" location="650,850" dimension="343,112" />
+  <StrutsActivity path="/addFriend.do" location="350,1050" dimension="290,112" />
+  <StrutsActivity path="/searchFriend.do" location="950,1050" dimension="307,112" />
+  <StrutsActivity path="/replySms.do" location="650,1250" dimension="286,112" />
+  <StrutsActivity path="/sendSms.do" location="50,1250" dimension="284,112" />
+  <StrutsActivity path="/addComment.do" location="1250,450" dimension="313,112" />
+  <StrutsActivity path="/replyComment.do" location="1250,850" dimension="321,112" />
+  <StrutsActivity path="/iTry.do" location="50,1650" dimension="250,112" />
+  <StrutsActivity path="/iShare.do" location="350,1650" dimension="266,112" />
+  <StrutsActivity path="/iGroupPurchase.do" location="950,1650" dimension="326,112" />
+  <StrutsActivity path="/iForward.do" location="950,1850" dimension="281,112" />
+  <StrutsActivity path="/recommandFriend.do" location="1550,650" dimension="342,112" />
+  <StrutsActivity path="/findFriendLog.do" location="1550,1250" dimension="314,112" />
+  <StrutsActivity path="/addPhoto.do" location="1850,1050" dimension="289,112" />
+  <StrutsActivity path="/removePhoto.do" location="350,2250" dimension="313,112" />
+  <StrutsActivity path="/switchDefaultPhoto.do" location="950,2250" dimension="350,112" />
+  <StrutsActivity path="/modifyPhotoDesc.do" location="1550,2250" dimension="338,112" />
+  <StrutsActivity path="/findPhoto.do" location="50,2450" dimension="290,112" />
+  <StrutsActivity path="/findAlbum.do" location="650,2450" dimension="293,112" />
+  <StrutsActivity path="/bizSignup.do" location="2150,750" dimension="287,112" />
+  <StrutsActivity path="/bizLogin.do" location="2150,1250" dimension="278,112" />
+  <StrutsActivity path="/createShop.do" location="2150,1650" dimension="299,112" />
+  <StrutsActivity path="/findComments.do" location="2150,1850" dimension="320,112" />
+  <StrutsActivity path="/claimShop.do" location="2150,2050" dimension="293,112" />
+  <StrutsActivity path="/addDeal.do" location="2150,2250" dimension="279,112" />
+  <StrutsActivity path="/findStatistics.do" location="1850,350" dimension="308,112" />
+  <StrutsActivity path="/auditDeal.do" location="2450,350" dimension="287,112" />
+  <StrutsActivity path="/index.do" location="950,50" dimension="290,112" />
+  <StrutsActivity path="/userLogout.do" location="2150,550" dimension="299,112" />
+  <StrutsActivity path="/home/index.jsp" location="270,270" dimension="133,55" />
+  <StrutsActivity path="/form/login.jsp" location="50,2250" dimension="125,55" />
+  <StrutsActivity path="/home/signup.jsp" location="50,450" dimension="141,55" />
+  <StrutsActivity path="/home/updateUserProfile.jsp" location="950,450" dimension="210,55" />
+  <StrutsActivity path="/form/index.jsp" location="1850,850" dimension="128,55" />
+  <StrutsActivity path="/form/searchShop.jsp" location="660,750" dimension="167,55" />
+  <StrutsActivity path="/biz/updateShopProfile.jsp" location="50,950" dimension="196,55" />
+  <StrutsActivity path="/form/addFriend.jsp" location="1850,1450" dimension="156,55" />
+  <StrutsActivity path="/form/searchFriend.jsp" location="1550,1650" dimension="173,55" />
+  <StrutsActivity path="/form/replySms.jsp" location="1850,1650" dimension="151,55" />
+  <StrutsActivity path="/form/sendSms.jsp" location="1550,1850" dimension="150,55" />
+  <StrutsActivity path="/form/addComment.jsp" location="1850,1850" dimension="179,55" />
+  <StrutsActivity path="/form/replyComment.jsp" location="350,2050" dimension="186,55" />
+  <StrutsActivity path="/form/iTry.jsp" location="650,2050" dimension="117,55" />
+  <StrutsActivity path="/form/iShare.jsp" location="950,2050" dimension="133,55" />
+  <StrutsActivity path="/form/iGroupPurchase.jsp" location="1250,2050" dimension="193,55" />
+  <StrutsActivity path="/form/iForward.jsp" location="1550,2050" dimension="148,55" />
+  <StrutsActivity path="/form/recommandFriend.jsp" location="1850,2050" dimension="207,55" />
+  <StrutsActivity path="/form/findFriendLog.jsp" location="1550,1450" dimension="180,55" />
+  <StrutsActivity path="/form/addPhoto.jsp" location="1250,2450" dimension="155,55" />
+  <StrutsActivity path="/form/removePhoto.jsp" location="1550,2450" dimension="178,55" />
+  <StrutsActivity path="/form/switchDefaultPhoto.jsp" location="1850,2450" dimension="216,55" />
+  <StrutsActivity path="/form/modifyPhotoDesc.jsp" location="50,2650" dimension="205,55" />
+  <StrutsActivity path="/form/findPhoto.jsp" location="350,2650" dimension="156,55" />
+  <StrutsActivity path="/form/findAlbum.jsp" location="650,2650" dimension="159,55" />
+  <StrutsActivity path="/form/bizSignup.jsp" location="350,850" dimension="155,55" />
+  <StrutsActivity path="/biz/login.jsp" location="2150,1450" dimension="112,55" />
+  <StrutsActivity path="/biz/createShop.jsp" location="950,2650" dimension="152,55" />
+  <StrutsActivity path="/form/findComments.jsp" location="1250,2650" dimension="186,55" />
+  <StrutsActivity path="/form/claimShop.jsp" location="1550,2650" dimension="159,55" />
+  <StrutsActivity path="/biz/addDeal.jsp" location="1850,2650" dimension="132,55" />
+  <StrutsActivity path="/form/delDeal.jsp" location="2150,2650" dimension="140,55" />
+  <StrutsActivity path="/form/findStatistics.jsp" location="2450,950" dimension="174,55" />
+  <StrutsActivity path="/form/auditDeal.jsp" location="2450,1450" dimension="153,55" />
+  <StrutsActivity path="/form/userLogout.jsp" location="2450,2650" dimension="165,55" />
+  <StrutsActivity path="/home/login.jsp" location="495,60" dimension="130,55" />
+  <StrutsActivity path="/index.jsp" location="765,45" dimension="92,55" />
+  <StrutsActivity path="/home/addFriend.jsp" location="50,1450" dimension="161,55" />
+  <StrutsActivity path="/home/searchFriend.jsp" location="350,1450" dimension="178,55" />
+  <StrutsActivity path="/home/sendSms.jsp" location="650,1450" dimension="155,55" />
+  <StrutsActivity path="/home/replySms.jsp" location="950,1450" dimension="156,55" />
+  <StrutsActivity path="/home/addComment.jsp" location="1250,1250" dimension="184,55" />
+  <StrutsActivity path="/home/replyComment.jsp" location="1250,1450" dimension="191,55" />
+  <StrutsActivity path="/home/iTry.jsp" location="50,1850" dimension="122,55" />
+  <StrutsActivity path="/home/iShare.jsp" location="350,1850" dimension="138,55" />
+  <StrutsActivity path="/home/iGroupPurchase.jsp" location="650,1850" dimension="198,55" />
+  <StrutsActivity path="/home/iForward.jsp" location="50,2050" dimension="153,55" />
+  <StrutsActivity path="/home/recommandFriend.jsp" location="1550,1050" dimension="212,55" />
+  <StrutsActivity path="/removeDeal.do" />
+  <StrutsActivity path="/removeShop.do" />
+  <StrutsActivity path="/form/removeDeal.jsp" />
+  <StrutsActivity path="/form/removeShop.jsp" />
+  <StrutsTransition id="/biz/addDeal.jsp,null,/addDeal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1982,2677" />
+      <AbsolutePoint location="2111,2677" />
+      <AbsolutePoint location="2111,2306" />
+      <AbsolutePoint location="2150,2306" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home/updateUserProfile.jsp,null,/updateUserProfile.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1119,450" />
+      <AbsolutePoint location="1119,362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/removeShop.jsp,null,/removeShop.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/biz/updateShopProfile.jsp,null,/updateShopProfile.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="148,950" />
+      <AbsolutePoint location="148,906" />
+      <AbsolutePoint location="650,906" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/recommandFriend.jsp,null,/recommandFriend.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2044,2050" />
+      <AbsolutePoint location="2044,1177" />
+      <AbsolutePoint location="1777,1177" />
+      <AbsolutePoint location="1777,762" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/sendSms.jsp,null,/sendSms.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1625,1850" />
+      <AbsolutePoint location="1625,1807" />
+      <AbsolutePoint location="315,1807" />
+      <AbsolutePoint location="315,1362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/biz/createShop.jsp,null,/createShop.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1026,2705" />
+      <AbsolutePoint location="1026,2810" />
+      <AbsolutePoint location="2485,2810" />
+      <AbsolutePoint location="2485,1706" />
+      <AbsolutePoint location="2449,1706" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/biz/login.jsp,null,/bizLogin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2206,1450" />
+      <AbsolutePoint location="2206,1362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/addComment.jsp,null,/addComment.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1939,1905" />
+      <AbsolutePoint location="1939,1977" />
+      <AbsolutePoint location="2545,1977" />
+      <AbsolutePoint location="2545,506" />
+      <AbsolutePoint location="1563,506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/bizSignup.jsp,null,/bizSignup.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="427,850" />
+      <AbsolutePoint location="427,820" />
+      <AbsolutePoint location="2150,820" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/findPhoto.jsp,null,/findPhoto.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="428,2650" />
+      <AbsolutePoint location="428,2506" />
+      <AbsolutePoint location="340,2506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/index.jsp,null,/iLike.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1914,850" />
+      <AbsolutePoint location="1914,606" />
+      <AbsolutePoint location="605,606" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userLogin.do,index,/home/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,162" />
+      <AbsolutePoint location="324,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/findStatistics.jsp,null,/findStatistics.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/findAlbum.jsp,null,/findAlbum.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="729,2650" />
+      <AbsolutePoint location="729,2562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/modifyPhotoDesc.jsp,null,/modifyPhotoDesc.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,2705" />
+      <AbsolutePoint location="152,2720" />
+      <AbsolutePoint location="1743,2720" />
+      <AbsolutePoint location="1743,2362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/findFriendLog.jsp,null,/findFriendLog.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1707,1450" />
+      <AbsolutePoint location="1707,1362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/userLogout.jsp,null,/userLogout.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/delDeal.jsp,null,/delDeal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2220,2650" />
+      <AbsolutePoint location="2220,2562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/searchFriend.jsp,null,/searchFriend.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,1677" />
+      <AbsolutePoint location="1488,1677" />
+      <AbsolutePoint location="1488,1120" />
+      <AbsolutePoint location="1257,1120" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/addPhoto.jsp,null,/addPhoto.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1327,2505" />
+      <AbsolutePoint location="1327,2520" />
+      <AbsolutePoint location="2081,2520" />
+      <AbsolutePoint location="2081,1162" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/searchShop.jsp,null,/searchShop.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="827,777" />
+      <AbsolutePoint location="1100,777" />
+      <AbsolutePoint location="1100,762" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/iShare.jsp,null,/iShare.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,2077" />
+      <AbsolutePoint location="893,2077" />
+      <AbsolutePoint location="893,1706" />
+      <AbsolutePoint location="616,1706" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/claimShop.jsp,null,/claimShop.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,2677" />
+      <AbsolutePoint location="1518,2677" />
+      <AbsolutePoint location="1518,2210" />
+      <AbsolutePoint location="2296,2210" />
+      <AbsolutePoint location="2296,2162" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/addFriend.jsp,null,/addFriend.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1928,1450" />
+      <AbsolutePoint location="1928,1207" />
+      <AbsolutePoint location="495,1207" />
+      <AbsolutePoint location="495,1162" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/replySms.jsp,null,/replySms.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1925,1650" />
+      <AbsolutePoint location="1925,1580" />
+      <AbsolutePoint location="820,1580" />
+      <AbsolutePoint location="820,1362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/iTry.jsp,null,/iTry.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="708,2050" />
+      <AbsolutePoint location="708,2007" />
+      <AbsolutePoint location="187,2007" />
+      <AbsolutePoint location="187,1762" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/auditDeal.jsp,null,/auditDeal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/iGroupPurchase.jsp,null,/iGroupPurchase.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1261,2050" />
+      <AbsolutePoint location="1261,1762" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home/signup.jsp,null,/userSignup.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="191,472" />
+      <AbsolutePoint location="405,472" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/removePhoto.jsp,null,/removePhoto.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1639,2450" />
+      <AbsolutePoint location="1639,2407" />
+      <AbsolutePoint location="521,2407" />
+      <AbsolutePoint location="521,2362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/findComments.jsp,null,/findComments.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1436,2677" />
+      <AbsolutePoint location="1488,2677" />
+      <AbsolutePoint location="1488,2007" />
+      <AbsolutePoint location="2310,2007" />
+      <AbsolutePoint location="2310,1962" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/switchDefaultPhoto.jsp,null,/switchDefaultPhoto.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1958,2505" />
+      <AbsolutePoint location="1958,2607" />
+      <AbsolutePoint location="1125,2607" />
+      <AbsolutePoint location="1125,2362" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/removeDeal.jsp,null,/removeDeal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/replyComment.jsp,null,/replyComment.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="443,2105" />
+      <AbsolutePoint location="443,2180" />
+      <AbsolutePoint location="1518,2180" />
+      <AbsolutePoint location="1518,962" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/login.jsp,null,/userLogin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2277" />
+      <AbsolutePoint location="-25,2277" />
+      <AbsolutePoint location="-25,106" />
+      <AbsolutePoint location="50,106" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/iForward.jsp,null,/iForward.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1624,2050" />
+      <AbsolutePoint location="1624,1920" />
+      <AbsolutePoint location="1231,1920" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

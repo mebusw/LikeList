@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/162/trunk/WebRoot/alipay
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/153/trunk/WebRoot/alipay/index.jsp
+END
+notify_url.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/153/trunk/WebRoot/alipay/notify_url.jsp
+END
+alipay.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/162/trunk/WebRoot/alipay/alipay.jsp
+END
+return_url.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/155/trunk/WebRoot/alipay/return_url.jsp
+END
+alipayto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/154/trunk/WebRoot/alipay/alipayto.jsp
+END

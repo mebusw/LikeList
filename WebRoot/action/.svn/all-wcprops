@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/273/trunk/WebRoot/action
+END
+fetchTrylist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/227/trunk/WebRoot/action/fetchTrylist.jsp
+END
+zoomUserImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/243/trunk/WebRoot/action/zoomUserImage.jsp
+END
+inviteFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/190/trunk/WebRoot/action/inviteFriend.jsp
+END
+isUserExist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/143/trunk/WebRoot/action/isUserExist.jsp
+END
+searchDeal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/273/trunk/WebRoot/action/searchDeal.jsp
+END
+updateShopProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/222/trunk/WebRoot/action/updateShopProfile.jsp
+END
+fetchProvince.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/143/trunk/WebRoot/action/fetchProvince.jsp
+END
+searchShop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/273/trunk/WebRoot/action/searchShop.jsp
+END
+findRecommendFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/267/trunk/WebRoot/action/findRecommendFriend.jsp
+END
+findSmsInbox.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/190/trunk/WebRoot/action/findSmsInbox.jsp
+END
+signup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/236/trunk/WebRoot/action/signup.jsp
+END
+findRecentDeal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/273/trunk/WebRoot/action/findRecentDeal.jsp
+END
+updateDeal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/256/trunk/WebRoot/action/updateDeal.jsp
+END
+findRecentGr.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/242/trunk/WebRoot/action/findRecentGr.jsp
+END
+findShop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/216/trunk/WebRoot/action/findShop.jsp
+END
+findFriendLog.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/267/trunk/WebRoot/action/findFriendLog.jsp
+END
+zoomDealImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/256/trunk/WebRoot/action/zoomDealImage.jsp
+END
+acceptInvite.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/190/trunk/WebRoot/action/acceptInvite.jsp
+END
+zoomShopImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/143/trunk/WebRoot/action/zoomShopImage.jsp
+END
+isShopExist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/143/trunk/WebRoot/action/isShopExist.jsp
+END
+fetchCity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/164/trunk/WebRoot/action/fetchCity.jsp
+END
+disLike.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/143/trunk/WebRoot/action/disLike.jsp
+END
+uploadUserImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/143/trunk/WebRoot/action/uploadUserImage.jsp
+END
+fetchCategory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/143/trunk/WebRoot/action/fetchCategory.jsp
+END
+iTry.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/233/trunk/WebRoot/action/iTry.jsp
+END
+uploadImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/231/trunk/WebRoot/action/uploadImage.jsp
+END
+fetchLikelist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/227/trunk/WebRoot/action/fetchLikelist.jsp
+END
+sendMail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/266/trunk/WebRoot/action/sendMail.jsp
+END
+updateUserPwd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/190/trunk/WebRoot/action/updateUserPwd.jsp
+END
+isBizExist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/WebRoot/action/isBizExist.jsp
+END
+iLike.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/233/trunk/WebRoot/action/iLike.jsp
+END
+searchFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/143/trunk/WebRoot/action/searchFriend.jsp
+END
+createShop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/236/trunk/WebRoot/action/createShop.jsp
+END
+fetchDistrict.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/143/trunk/WebRoot/action/fetchDistrict.jsp
+END
+findAlbum.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/190/trunk/WebRoot/action/findAlbum.jsp
+END
+updateUserProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/243/trunk/WebRoot/action/updateUserProfile.jsp
+END
+updateBizPwd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/190/trunk/WebRoot/action/updateBizPwd.jsp
+END
+addPhoto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/143/trunk/WebRoot/action/addPhoto.jsp
+END
+updateUserSeekHelp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/257/trunk/WebRoot/action/updateUserSeekHelp.jsp
+END
+findComment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/190/trunk/WebRoot/action/findComment.jsp
+END
+fetchContact.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/230/trunk/WebRoot/action/fetchContact.jsp
+END
+iResponse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/209/trunk/WebRoot/action/iResponse.jsp
+END
+findFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/WebRoot/action/findFriend.jsp
+END
+updateBizProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/190/trunk/WebRoot/action/updateBizProfile.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/225/trunk/WebRoot/action/login.jsp
+END
+switchCoverPhoto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/143/trunk/WebRoot/action/switchCoverPhoto.jsp
+END
+addComment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/209/trunk/WebRoot/action/addComment.jsp
+END
+updateGrouprate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/231/trunk/WebRoot/action/updateGrouprate.jsp
+END
+sendSms.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/190/trunk/WebRoot/action/sendSms.jsp
+END
+uploadDealImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/256/trunk/WebRoot/action/uploadDealImage.jsp
+END
+uploadShopImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/173/trunk/WebRoot/action/uploadShopImage.jsp
+END
+iClickUrl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/209/trunk/WebRoot/action/iClickUrl.jsp
+END
+findRecentLog.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/267/trunk/WebRoot/action/findRecentLog.jsp
+END

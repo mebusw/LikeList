@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/265/trunk/src
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/225/trunk/src/applicationContext.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/191/trunk/src/log4j.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/208/trunk/src/hibernate.cfg.xml
+END

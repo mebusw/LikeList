@@ -1,0 +1,71 @@
+9
+
+dir
+278
+https://likelist.googlecode.com/svn/trunk/WebRoot/jquery-ui
+https://likelist.googlecode.com/svn
+
+
+
+2011-04-13T09:53:46.712663Z
+238
+litian332@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06c0c982-e33a-a83f-b856-080b6f19d396
+
+css
+dir
+
+development-bundle
+dir
+
+index.html
+file
+
+
+
+
+2011-03-28T02:59:23.149452Z
+f699a43f170674c3ce7c67776731a3b3
+2011-03-27T23:45:43.342519Z
+205
+litian332@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+31575
+
+js
+dir
+
